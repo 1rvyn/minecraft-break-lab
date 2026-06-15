@@ -4,6 +4,10 @@ A localhost Paper 1.21.10 server and passive telemetry plugin for collecting pac
 
 The plugin records selected inbound gameplay packet metadata and corresponding server events only while you explicitly run a capture. It is intended to make claims about a client modification testable against packet order, timing, server ticks, player state, tools, blocks, and acknowledgements.
 
+## Published evidence
+
+The repository includes a [paired baseline and modified capture](evidence/2026-06-14-break-test/README.md), including both complete JSONL files and a compact writeup of the packet shape, timing differences, per-material results, integrity hashes, and reproduction commands.
+
 ## Requirements
 
 - Java 21
