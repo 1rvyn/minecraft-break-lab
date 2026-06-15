@@ -1,0 +1,15 @@
+name: BreakTelemetry
+version: '${version}'
+main: dev.johns.breaktelemetry.BreakTelemetryPlugin
+api-version: '1.21'
+description: Local block-breaking packet telemetry for controlled testing.
+authors: [johns]
+commands:
+  breaklab:
+    description: Manage telemetry capture sessions and the test arena.
+    usage: /breaklab <start|mark|status|stop|arena|setup>
+    permission: breaktelemetry.admin
+permissions:
+  breaktelemetry.admin:
+    description: Controls BreakTelemetry sessions.
+    default: op
